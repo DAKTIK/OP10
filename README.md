@@ -42,7 +42,7 @@ Total size is about 10 MB. On load, the objects come first. The audio snippets l
 ## 3. After going live
 
 - [ ] **Make og-image absolute:** in `index.html`, change `<meta property="og:image" content="og-image.png">` to the full address, e.g. `https://YOUR-DOMAIN/og-image.png`. Otherwise some apps won't show the preview image. Optionally also add `<meta property="og:url" content="https://YOUR-DOMAIN/">`.
-- [ ] **Test on real phones:** iPhone with Safari and Android with Chrome. Check that all 10 objects appear, that swiping up/down turns the wheel and swiping sideways spins the object, that the sound plays, that the text button works, that "legal" opens and closes the Legal & Privacy panel, and that the Bandcamp link opens.
+- [ ] **Test on real phones:** iPhone with Safari and Android with Chrome. Check that all 10 objects appear, that swiping up/down turns the wheel and swiping sideways spins the object, that the sound plays, that the text button works, that "legal" opens and closes the Legal & Privacy panel, and that both Bandcamp links open (emblem → label, "I7HVN" logo → album).
 - [ ] **Company details and privacy statement:** replace the placeholders in the Legal & Privacy panel with the real details, see sections 4 and 5.
 
 ## 4. Legal (the operator is based in the Netherlands) – please don't forget
@@ -67,7 +67,7 @@ Dutch law applies. What counts is where the operator is established, not where t
 |---|---|
 | Track texts | `const TEXTS = [` (JSON, tracks 1–10 in order) |
 | Track headlines | `const HEADS = [` (SVG paths from Figma, font "Comsat Navy-Box". If a title changes, export it again from Figma as outlines) |
-| Bandcamp link | `href="https://mirrorzone.bandcamp.com/"` |
+| Bandcamp links | emblem (bottom centre) → label page: `href="https://mirrorzone.bandcamp.com/"` · "I7HVN" logo (top left) → album: `href="https://mirrorzone.bandcamp.com/album/the-objective-truth"` |
 | Legal & Privacy text | `class="legal-body"` (plain text; line breaks are kept as written, special characters like `&` written as `&amp;`) |
 | Tilt of individual objects | `const TILT = {4: 0.24}` (track 5 "Pendant" tilted slightly forward, value in radians) |
 | Strength of the stretch effect | `const STREAK_MIN_K` (lower = longer streaks) |
